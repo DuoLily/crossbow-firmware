@@ -11,9 +11,9 @@ constexpr uint8_t I2C_SCL_PIN = 9;
 constexpr uint8_t TCAADDR = 0x70;
 
 constexpr uint8_t CH_MPU6050 = 0;
-constexpr uint8_t CH_OLED    = 1;
-constexpr uint8_t CH_VL53    = 2;
-constexpr uint8_t CH_VL6180  = 3;
+constexpr uint8_t CH_OLED = 1;
+constexpr uint8_t CH_VL53 = 2;
+constexpr uint8_t CH_VL6180 = 3;
 
 // OLED
 constexpr uint8_t SCREEN_ADDRESS = 0x3C;
@@ -21,13 +21,13 @@ constexpr uint8_t SCREEN_ADDRESS = 0x3C;
 // Buttons
 
 constexpr uint8_t BTN_SAFETY_PIN = 2;
-constexpr uint8_t BTN_MULTI_PIN  = 3;
+constexpr uint8_t BTN_MULTI_PIN = 3;
 
 // Battery
 constexpr uint8_t BATTERY_PIN = 4;
 
 // VL6180X Hardware Offset
-constexpr uint8_t HARDWARE_OFFSET = 21;
+constexpr uint8_t HARDWARE_OFFSET = 50;
 
 // VL53 / VL6180 滑動平均
 constexpr int NUM_READINGS_53 = 10;
@@ -51,14 +51,12 @@ constexpr float G_THRESHOLD = 5.0;
 constexpr float HPF_ALPHA = 0.95;
 
 // GitHub
-// 注意：不要把 GitHub Token 放在韌體裡。
-// 公開 repository 不需要 Token。
 constexpr const char* URL_VERSION =
-    "https://raw.githubusercontent.com/"
-    "DuoLily/crossbow-firmware/"
-    "refs/heads/main/version.txt";
+  "https://raw.githubusercontent.com/"
+  "DuoLily/crossbow-firmware/"
+  "refs/heads/main/version.txt";
 
 constexpr const char* URL_FIRMWARE =
-    "https://raw.githubusercontent.com/"
-    "DuoLily/crossbow-firmware/"
-    "refs/heads/main/firmware.bin";
+  "https://raw.githubusercontent.com/"
+  "DuoLily/crossbow-firmware/"
+  "refs/heads/main/firmware.bin";
